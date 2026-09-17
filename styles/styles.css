@@ -1,28 +1,72 @@
-main{
-    max-width: 840px;
-}
-
-aside{
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
     color: #333;
-    text-align: center;
 }
 
-aside img{
+/* Navigation */
+nav {
+    background-color: #2e5d34;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+/* Main section */
+main {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Main heading */
+h1 {
+    color: #2e5d34;
+}
+
+/* Images inside main */
+main img {
     width: 150px;
+    height: 150px;
+    border: 1px solid #333;
+    padding: 5px;
+    box-shadow: 0 0 10px #777;
+}
+
+/* Aside section */
+aside {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #333;
+    padding: 15px;
+    background-color: #eeeeee;
+    color: #222;
+}
+
+/* Image inside aside */
+aside img {
+    width: 200px;
     height: auto;
 }
 
-p{
+/* Paragraphs */
+p {
     padding: 0;
 }
 
-footer{
+/* Footer */
+footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+    padding: 10px;
 }
