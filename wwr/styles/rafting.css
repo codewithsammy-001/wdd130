@@ -58,6 +58,11 @@ h2 {
   color: var(--primary-color);
 }
 
+h2 {
+  background-color: var(--accent2-color);
+  padding: 8px;
+}
+
 h1 {
   position: absolute;
   top: 20px;
