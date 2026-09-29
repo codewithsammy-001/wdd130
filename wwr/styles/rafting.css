@@ -115,3 +115,15 @@ article {
   height: 40px;
   margin: 5px;
 }
+
+.history {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.history h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
