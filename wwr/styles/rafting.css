@@ -1,130 +1,130 @@
 :root {
-  --primary-color: #006d77;
-  --secondary-color: #83c5be;
-  --accent1-color: #264653;
-  --accent2-color: #ffddd2;
-  --heading-font: "Trebuchet MS", Arial, sans-serif;
-  --body-font: Arial, Helvetica, sans-serif;
+--primary-color: #006d77;
+--secondary-color: #83c5be;
+--accent1-color: #264653;
+--accent2-color: #ffddd2;
+--heading-font: "Trebuchet MS", Arial, sans-serif;
+--body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+  }
 
 body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
+font-family: var(--body-font);
+color: var(--accent1-color);
 }
 
 header,
 main,
 footer {
-  width: 840px;
-  margin: 0 auto;
+width: 840px;
+margin: 0 auto;
 }
 
 header {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  align-items: center;
+background-color: var(--primary-color);
+color: #ffffff;
+padding: 20px;
+display: grid;
+grid-template-columns: 150px 1fr;
+align-items: center;
 }
 
 header img {
-  width: 100px;
-  height: auto;
+width: 100px;
+height: auto;
 }
 
 nav {
-  margin: 16px;
-  padding: 8px;
-  display: flex;
-  justify-content: space-around;
+margin: 16px;
+padding: 8px;
+display: flex;
+justify-content: space-around;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
+color: #ffffff;
+text-decoration: none;
+margin: 0 10px;
 }
 
 h1 {
-  font-family: var(--heading-font);
-  color: #fff;
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.8;
-  background-color: var(--accent1-color);
+font-family: var(--heading-font);
+color: #ffffff;
+position: absolute;
+top: 20px;
+width: 100%;
+padding: 16px;
+text-align: center;
+opacity: 0.8;
+background-color: var(--accent1-color);
 }
 
 h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  background-color: var(--accent2-color);
-  padding: 8px;
-  margin-bottom: 10px;
+font-family: var(--heading-font);
+color: var(--primary-color);
+background-color: var(--accent2-color);
+padding: 8px;
+margin-bottom: 10px;
 }
 
 nav,
 p,
 section,
 article {
-  margin: 16px;
-  padding: 8px;
+margin: 16px;
+padding: 8px;
 }
 
 .hero {
-  position: relative;
+position: relative;
 }
 
 .hero img {
-  display: block;
-  width: 100%;
-  height: auto;
+display: block;
+width: 100%;
+height: auto;
 }
 
 .hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  background-color: var(--secondary-color);
-  padding: 20px;
+position: absolute;
+bottom: 20px;
+left: 20px;
+right: 20px;
+background-color: var(--secondary-color);
+padding: 20px;
 }
 
 .hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 15px;
+float: right;
+width: 125px;
+margin-left: 15px;
 }
 
 .socialmedia a {
-  text-decoration: none;
+text-decoration: none;
 }
 
 .socialmedia img {
-  width: 40px;
-  height: 40px;
-  margin: 5px;
+width: 40px;
+height: 40px;
+margin: 5px;
 }
 
 .history {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
-  gap: 20px;
+display: grid;
+grid-template-columns: 1fr 2fr;
+align-items: center;
+gap: 20px;
 }
 
 .history h2 {
-  grid-column: 1 / -1;
-  text-align: center;
+grid-column: 1 / -1;
+text-align: center;
 }
 
 /* WEEK 5: CONTACT PAGE */
@@ -140,7 +140,7 @@ align-items: start;
 .contact-info h1 {
 position: static;
 grid-column: 1 / -1;
-color: white;
+color: #ffffff;
 background-color: var(--primary-color);
 opacity: 1;
 text-align: center;
@@ -249,7 +249,7 @@ accent-color: var(--primary-color);
 
 .contact-form button {
 background-color: var(--primary-color);
-color: white;
+color: #ffffff;
 padding: 12px 20px;
 border: none;
 border-radius: 4px;
@@ -264,28 +264,33 @@ background-color: var(--accent1-color);
 
 /* Responsive layout */
 @media screen and (max-width: 880px) {
-header,
+body > header {
+grid-template-columns: 100px 1fr;
+}
+
 main,
 footer {
 width: 100%;
 }
 
-header {
-grid-template-columns: 100px 1fr;
+header,
+nav {
+max-width: 100%;
 }
 
 header nav {
 flex-wrap: wrap;
 }
 
-.contact-info {
+main .contact-info {
 grid-template-columns: 1fr;
 }
 
-.contact-info iframe {
+main .contact-info > iframe {
 grid-column: auto;
 }
 
-.employees figure {
+main .employees > figure {
 flex-basis: 180px;
+}
 }
