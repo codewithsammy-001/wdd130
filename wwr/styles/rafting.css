@@ -126,3 +126,166 @@ article {
   grid-column: 1 / -1;
   text-align: center;
 }
+
+/* WEEK 5: CONTACT PAGE */
+
+/* Contact information */
+.contact-info {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 16px;
+align-items: start;
+}
+
+.contact-info h1 {
+position: static;
+grid-column: 1 / -1;
+color: white;
+background-color: var(--primary-color);
+opacity: 1;
+text-align: center;
+}
+
+.contact-info > p {
+margin: 0;
+padding: 8px;
+}
+
+.contact-info iframe {
+width: 100%;
+max-width: 400px;
+border: none;
+grid-column: 1 / -1;
+justify-self: center;
+}
+
+/* Employee profiles */
+.employees {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+
+.employees h2 {
+width: 100%;
+text-align: center;
+}
+
+.employees figure {
+flex: 1 1 200px;
+text-align: center;
+padding: 10px;
+background-color: var(--secondary-color);
+}
+
+.employees img {
+width: 100%;
+max-width: 200px;
+height: auto;
+display: block;
+margin: 0 auto 10px;
+}
+
+.employees figcaption {
+font-weight: bold;
+padding: 8px;
+}
+
+/* Contact form */
+.contact-form {
+max-width: 600px;
+margin: 20px auto;
+padding: 20px;
+border: 1px solid var(--secondary-color);
+border-radius: 8px;
+}
+
+.contact-form h2 {
+text-align: center;
+}
+
+.contact-form form {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+.contact-form label {
+display: block;
+font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid var(--accent1-color);
+border-radius: 4px;
+font: inherit;
+}
+
+.contact-form fieldset {
+border: 1px solid var(--secondary-color);
+padding: 12px;
+}
+
+.contact-form legend {
+font-weight: bold;
+padding: 4px;
+}
+
+.contact-form fieldset label,
+.contact-form form > label:has(input[type="checkbox"]) {
+margin: 8px 0;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+margin-right: 8px;
+accent-color: var(--primary-color);
+}
+
+.contact-form button {
+background-color: var(--primary-color);
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+font: inherit;
+font-weight: bold;
+cursor: pointer;
+}
+
+.contact-form button:hover {
+background-color: var(--accent1-color);
+}
+
+/* Responsive layout */
+@media screen and (max-width: 880px) {
+header,
+main,
+footer {
+width: 100%;
+}
+
+header {
+grid-template-columns: 100px 1fr;
+}
+
+header nav {
+flex-wrap: wrap;
+}
+
+.contact-info {
+grid-template-columns: 1fr;
+}
+
+.contact-info iframe {
+grid-column: auto;
+}
+
+.employees figure {
+flex-basis: 180px;
+}
