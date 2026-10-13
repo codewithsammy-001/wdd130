@@ -21,60 +21,83 @@
     </header>
 
     <main>
-        <div class="hero">
-            <img src="images/hero.jpg" alt="People enjoying a white water rafting adventure">
-            <h1>White Water Rafting</h1>
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+            <p>Have questions about our rafting adventures? Get in touch with us!</p>
 
-            <article>
-                <img src="images/happy-client.jpg" alt="Happy rafting client">
-                <p>
-                    Our mission is to provide exciting and memorable white water
-                    rafting adventures while helping our guests enjoy nature,
-                    teamwork, and the thrill of the river.
-                </p>
-            </article>
-        </div>
+            <h2>Our Information</h2>
+            <p><strong>Address:</strong> [Enter company address]</p>
+            <p><strong>Phone:</strong> [Enter company phone number]</p>
+            <p><strong>Email:</strong> info@whitewaterrafting.com</p>
 
-        <section class="history">
-    <h2>History</h2>
-    <p>
-        Our rafting company began with a passion for rivers and adventure.
-        Over the years, we have welcomed people from many places and
-        helped them experience the excitement of white water rafting.
-    </p>
-</section>
+            <iframe
+                title="Map showing our company location"
+                src="https://maps.google.com/maps?q=White%20Water%20Rafting&output=embed"
+                width="400"
+                height="300"
+                loading="lazy">
+            </iframe>
+        </section>
 
-        <section>
-    <h2>Adventure Awaits You!</h2>
+        <section class="employees">
+            <h2>Meet Our Team</h2>
 
-    <div class="adventures">
-        <figure>
-            <img src="images/adventure1.jpg" alt="Rafting adventure on a river">
-            <figcaption>Los Dientes del Diablo</figcaption>
-        </figure>
+            <figure>
+                <img src="images/employee1.jpg" alt="Portrait of our rafting manager">
+                <figcaption>John Smith — General Manager</figcaption>
+            </figure>
 
-        <figure>
-            <img src="images/adventure2.jpg" alt="Rafting through white water">
-            <figcaption>Big Mallard</figcaption>
-        </figure>
+            <figure>
+                <img src="images/employee2.jpg" alt="Portrait of our rafting guide">
+                <figcaption>Sarah Johnson — Head Rafting Guide</figcaption>
+            </figure>
 
-        <figure>
-            <img src="images/adventure3.jpg" alt="People enjoying a rafting adventure">
-            <figcaption>Half Day Adventure</figcaption>
-        </figure>
+            <figure>
+                <img src="images/employee3.jpg" alt="Portrait of our customer service representative">
+                <figcaption>David Brown — Customer Service Representative</figcaption>
+            </figure>
+        </section>
 
-        <figure>
-            <img src="images/adventure4.jpg" alt="Exciting white water rapids">
-            <figcaption>Rapid Rush</figcaption>
-        </figure>
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
 
-        <figure>
-            <img src="images/adventure5.jpg" alt="Rafting through a beautiful river">
-            <figcaption>River Run</figcaption>
-        </figure>
-    </div>
-</section>
-        
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+
+                    <label>
+                        <input type="radio" name="purpose" value="general" required>
+                        General Inquiry
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>  
     </main>
 
     <footer>
